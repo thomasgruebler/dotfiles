@@ -1,6 +1,6 @@
 [user]
-	name = Florian Mauracher
-	email = florian.mauracher@gmx.net
+	name = Thomas Gruebler
+	email = thomas@gruebler.at
 [alias]
 	a    = add
 	au   = add -u
@@ -68,7 +68,7 @@
 	ui = auto
 [core]
 	pager = less -RFX
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/tgrue/.gitignore_global
 [diff]
 	tool = vimdiff
 	compactionHeuristic = true
@@ -89,3 +89,11 @@
 	autosquash = true
 [rerere]
 	enabled = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/tgrue/.stCommitMsg
