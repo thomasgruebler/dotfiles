@@ -118,3 +118,6 @@ bindkey "^r" history-incremental-pattern-search-backward
 
 # Last argument of previous command with ESC.
 bindkey -M viins '\e.' insert-last-word
+
+# User stuff
+export PATH="/Users/tgrue/anaconda3/bin:$PATH"
