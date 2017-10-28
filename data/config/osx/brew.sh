@@ -78,4 +78,4 @@ brewfonts=(
     font-inconsolata
     font-droid-serif
 )
-brew install ${brewfonts[@]}
+brew cask install ${brewfonts[@]}
